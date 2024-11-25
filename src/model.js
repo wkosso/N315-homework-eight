@@ -6,6 +6,7 @@ import {app } from "./firebaseConfig";
 const auth= getAuth(app);
 
 const userRecipes = [];
+var currentRecipeId = "";
 let isEditMode = false;
 //I commented here
 
@@ -37,7 +38,7 @@ export function changePage(pageName) {
         
 
 
-          
+           
 
           userRecipes.forEach((recipe,index) => {
            
@@ -133,7 +134,32 @@ $(".all-recipes").append(recipeHTML);
 
           
   
-      } else {
+      } else if ( pageName === "edit"){
+        console.log("edited page",currentRecipeId);
+        const recipe = userRecipes[currentRecipeId];
+        $("#app #recipeName").val(recipe.recipeName).prop("readonly", false); 
+
+        $("#app #imageURL").val(recipe.recipeImageURL).prop("readonly", false); 
+      
+        $("#app #recipeDes").val(recipe. recipeDescription).prop("readonly", false); 
+      
+      
+        
+        $("#app #recipeTotalTime").val(recipe. recipeTotalTime).prop("readonly", false); 
+      
+        
+        $("#app #recipeTotalTime").val(recipe. recipeTotalTime).prop("readonly", false); 
+      
+        
+        $("#app #recipeServingSize").val(recipe.  recipeServingSize).prop("readonly", false); 
+      
+        $("#app .ingreds input").val(recipe.ingredients).prop("readonly", false); 
+      
+      
+        $("#app .instructs input").val(recipe.instructions).prop("readonly", false); 
+      }
+      
+      else {
           removeRecipeListeners();
       }
         
@@ -249,21 +275,23 @@ if (
 }
    
 }else{
-
+    userRecipes.push(recipe);
   if (!isEditMode) {
     Swal.fire({
         title: "Your Recipe Has Been Created!",
         icon: "success"
     });
+
+    changePage("yourrecipe");
 }
 }
 
 
-userRecipes.push(recipe);
+
 
 
 $(".form input").val("");
- resetForm();
+//  resetForm();
 console.log(userRecipes);
 });
 
@@ -297,7 +325,7 @@ let foodString=`
 
 <div class="yourrec-InfoContainer infoplus" >
     <div class="yourrec-ImageHolder">
-        <div class="yourrecImg" style="background-image: url(../${food.recipeImageURL});">
+        <div class="yourrecImg" style="background-image: url(${food.recipeImageURL});">
             
         </div>
     </div>
@@ -361,32 +389,13 @@ export function editRecipeListerners(){
   isEditMode = true;
   const recipeId = e.currentTarget.id; 
  
+currentRecipeId = recipeId;
 
-  const recipe = userRecipes[recipeId]; 
-
-  console.log("Edit Button Clicked:", recipeId);
-
-
-  $("#app #recipeName").val(recipe.recipeName).prop("readonly", false); 
-
-  $("#app #imageURL").val(recipe.recipeImageURL).prop("readonly", false); 
-
-  $("#app #recipeDes").val(recipe. recipeDescription).prop("readonly", false); 
-
-
+console.log("Edit Button Clicked:", recipe);
   
-  $("#app #recipeTotalTime").val(recipe. recipeTotalTime).prop("readonly", false); 
-
-  
-  $("#app #recipeTotalTime").val(recipe. recipeTotalTime).prop("readonly", false); 
-
-  
-  $("#app #recipeServingSize").val(recipe.  recipeServingSize).prop("readonly", false); 
-
-  $("#app .ingreds input").val(recipe.ingredients).prop("readonly", false); 
 
 
-  $("#app .instructs input").val(recipe.instructions).prop("readonly", false); 
+
 
 
   });
