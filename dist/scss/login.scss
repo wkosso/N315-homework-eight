@@ -1,0 +1,156 @@
+.login-wrapper{
+    background-color: #FFD972;
+    width: 100%;
+   min-height: 800px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.login-container{
+   width: 60%;
+//padding-top: 10%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+
+}
+
+.login-title{
+    font-size: 30px;
+    font-family: LatoBlack;
+ padding-bottom: 8%;
+}
+
+.login-input-container{
+    width: 50%;
+    height: 170px;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+}
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #000000;
+    font-family:LatoRegular;
+font-size: 12px;
+width: 206px;
+
+
+
+}
+
+.login-btn{
+    width:209px;
+    height: 52px;
+    background-color: #FFD972;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 10px 6px 0.5px  rgba(136,136,136,0.2);
+    font-family: CaveatRegular;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.signup-question{
+    font-family: LatoItalic;
+    font-size: 12px;
+}
+
+
+.login-heading{
+    font-family: LatoBlack;
+    font-size: 30px;
+    padding-bottom: 5%;
+}
+
+.signup-btn{
+    width:250px;
+    height: 52px;
+    background-color: #FFD972;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 10px 6px 0.5px  rgba(136,136,136,0.2);
+    font-family: CaveatRegular;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.signup-input-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 300px;
+   
+}
+.login-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 70%;
+  height: 368px;
+
+
+  
+    
+}
+
+
+@media (max-width: 700px) {
+    .login-wrapper{
+        flex-direction: column;
+      
+    }
+
+  .login-btn{
+    width: 207px;
+    height: 52px;
+  }
+
+  .signup-btn{
+    width: 207px;
+    height: 52px;
+  }
+
+  .login-container{
+    margin-top: 20%;
+  }
+
+  .login-box{
+    margin-bottom: 12%;
+  }
+  .signup-question{
+    margin-top: 5%;
+  }
+}
+
+
+@media (max-width: 600px) {
+   .signup-input-container{
+    height: 250px;
+    margin-bottom: 15%;
+
+
+
+   }
+
+
+   .login-container{
+    margin-top: 20%;
+  }
+}

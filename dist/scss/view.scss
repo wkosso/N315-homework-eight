@@ -1,0 +1,340 @@
+.view-wrapper{
+
+    width: 100%;
+
+    padding-top: 15%;
+
+.viewRecipe-InfoBox{
+//background-color: pink;
+
+
+    .recipe-titleContainer{
+writing-mode: vertical-rl;  
+text-orientation:sideways;
+font-size: 20px;
+font-family: LatoBlack;
+width: 4%;
+
+//padding-left: 10%;
+
+    }
+
+
+    .recipe-viewFlexBox{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  //  background-color: purple;
+    padding-bottom: 5%;
+margin: 0 auto;
+width: 90%;
+.view-recipeImgContainer{
+    width: 468px;
+}
+ .view-recipeImg{
+
+    background-image:url(../assets/images/recipe-pizza.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 421px;
+ }  
+  
+ 
+ .view-recipeInfoSide{
+width: 43%;
+//background-color: gold;
+//height: 424px;
+    display: flex;
+   
+    justify-content: space-around;
+    flex-direction: column;
+
+    .InfoSide-destitle{
+        font-size: 25px;
+font-family: LatoBlack;
+
+height: 68px;
+    }
+
+
+.InfoSide-text{
+    font-family: CaveatRegular;
+    font-size: 20px;
+    width: 63%;
+    height: 144px;
+  //  background-color: aqua;
+}
+
+
+.InfoSide-timetitle{
+    font-size: 25px;
+font-family: LatoBlack;
+height: 62px;
+
+}
+
+
+
+.InfoSide-time{
+    font-family: CaveatRegular;
+    font-size: 20px;
+    width:30%;
+    height: 63px;
+  //  background-color: greenyellow;
+}
+
+.InfoSide-servingtitle{
+    font-size: 25px;
+font-family: LatoBlack;
+height: 62px;
+}
+
+.InfoSide-serving{
+    font-family: CaveatRegular;
+    font-size: 20px;
+    width:30%;
+    
+}
+
+
+
+ }
+
+}
+
+
+
+
+
+
+}
+
+
+
+.viewrecipe-itemsBox{
+//background-color: greenyellow;
+width: 90%;
+margin:  0 auto;
+display: flex;
+
+justify-content: center;
+flex-direction: column;
+
+padding-left: 8%;
+
+
+
+.viewrecipe-ingTitle{
+    font-size: 25px;
+font-family: LatoBlack;
+height:68px;
+}
+
+
+
+.viewrecipe-ingDes{
+width:80%;
+
+font-family: CaveatRegular;
+font-size: 20px;
+
+padding-bottom: 5%;
+
+}
+
+
+
+
+
+
+
+.viewrecipe-insTitle{
+    font-size: 25px;
+font-family: LatoBlack;
+height:68px
+}
+
+.viewrecipe-insDes{
+width: 80%;
+
+font-family: CaveatRegular;
+font-size: 20px;
+//background-color: orange;
+padding-bottom: 5%;
+}
+
+
+.editBtn2{
+    width: 13%;
+    height: 42px;
+    background-color: #FFD972;
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 10px 6px 0.5px  rgba(136,136,136,0.4);
+
+
+    font-family: CaveatRegular;
+font-size: 20px;
+cursor: pointer;
+}
+
+
+}
+
+
+}
+
+@media (max-width: 700px) {
+
+    .view-wrapper{
+
+        .viewRecipe-InfoBox{
+
+
+            .recipe-viewFlexBox{
+              //  background-color: orangered;
+                flex-direction: column;
+              
+            
+
+            .recipe-titleContainer{
+
+                writing-mode: horizontal-tb;
+              //  background-color: palegoldenrod;
+                width: 50%;
+            }
+
+
+
+
+            .view-recipeInfoSide{
+
+               // background-color: grey;
+                width: 79%;
+
+
+.InfoSide-destitle{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+                .InfoSide-text{
+
+                 //   background-color: aqua;
+                    width: 65%;
+                }
+            }
+        }
+
+
+
+
+
+
+    }
+
+
+
+    .viewrecipe-itemsBox{
+
+        .editBtn2{
+            width: 20%;
+        }
+    }
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .view-wrapper{
+
+        .viewRecipe-InfoBox{
+
+
+            .recipe-viewFlexBox{
+             //  background-color: orangered;
+                flex-direction: column;
+              
+          
+
+            .recipe-titleContainer{
+
+                writing-mode: horizontal-tb;
+              //  background-color: palegoldenrod;
+                width: 50%;
+            }
+
+.view-recipeImgContainer{
+
+    width: 251px;
+   
+}
+
+
+            .view-recipeInfoSide{
+
+               // background-color: grey;
+                width: 60%;
+
+
+.InfoSide-destitle{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+                .InfoSide-text{
+
+                 //   background-color: aqua;
+                    width: 65%;
+                    font-size: 16px;
+                }
+
+
+
+                .InfoSide-time{
+                    font-size: 16px;
+                }
+
+                .InfoSide-serving{
+                    font-size: 16px;
+                    
+                }
+            }
+        }
+
+
+
+
+
+
+    }
+
+
+
+    .viewrecipe-itemsBox{
+width: 70%;
+//background-color: indigo;
+.viewrecipe-ingDes{
+    font-size: 16px;
+}
+
+.viewrecipe-insDes{
+    font-size: 16px;
+}
+
+        .editBtn2{
+            width: 40%;
+        }
+    }
+    }
+}

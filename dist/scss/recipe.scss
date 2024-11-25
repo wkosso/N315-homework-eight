@@ -1,0 +1,222 @@
+.recipe-wrapper{
+
+    width: 85%;
+
+   padding-top: 10%;
+
+   margin: 0 auto;
+
+
+}
+
+.recipe-SigninText{
+    font-size: 25px;
+    font-family: CaveatBold;
+
+    margin-bottom: 5%;
+  
+}
+
+
+.form{
+ 
+width: 100%;
+
+.recip-info{
+    position: relative;
+
+
+   
+}
+    .recipeInput{
+
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 50px;
+       border: none;
+        border-bottom:2px solid black ;
+
+        font-size: 20px;
+        font-family: LatoLight;
+      
+       
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    
+    // .imgPostion{
+    //     position: relative;
+    //     background-color: greenyellow;
+    // }
+
+    
+    .attachBtn{
+width: 8%;
+background-color: #EFA7A7;
+height: 30px;
+border-radius: 30px;
+font-size: 17px;
+font-family: CaveatRegular;
+display: inline-block;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+box-shadow: -5px 10px 6px 0.5px  rgba(136,136,136,0.2);
+position: absolute;
+
+right: 0%;
+top: 0%;
+    }
+
+
+
+    .ingreds{
+        margin-top: 8%;
+     position: relative;
+    
+    }
+
+    .ingreds p{
+        font-size: 20px;
+        font-family: LatoLight;
+
+
+    }
+
+
+    .addBtn{
+        padding: 10px 15px;
+        background-color: #EFA7A7;
+        border-radius: 50%;
+        color: white;
+    
+        position: absolute;
+        right: 0;
+        bottom:5px;
+       cursor: pointer;
+    }
+
+
+
+
+
+    
+    .instructs{
+        margin-top: 8%;
+     position: relative;
+    }
+
+
+    .instructs p{
+        font-size: 20px;
+        font-family: LatoLight;
+
+
+    }
+
+.submit-box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+    .submitBtn{
+        width: 32%;
+        margin: 0 auto;
+        padding: 5px 15px;
+        background-color:  #EFA7A7;
+        border-radius: 30px;
+        color: white;
+    border: none;
+       cursor: pointer;
+
+       display: inline-block;
+       box-shadow: -5px 10px 6px 0.5px  rgba(136,136,136,0.2);
+
+       font-size: 25px;
+font-family: CaveatRegular;
+color: black;
+text-align: center;
+    }
+}
+
+
+
+
+@media (max-width: 700px) {
+
+    
+
+.recipe-SigninText{
+ 
+    text-align: center;
+    margin-top: 20%;
+}
+
+.form{
+
+    .recipeInput{
+        font-size: 16px;
+        padding-top: 15px;
+    }
+
+
+.attachBtn{
+    width: 18%;
+
+    }
+
+    .submit-box{
+
+        .submitBtn{
+            width: 50%;
+        }
+    }
+}
+
+
+    
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .recipe-SigninText{
+        font-size: 20px;
+       
+    }
+
+
+
+    .form{
+
+        
+        .recipeInput{
+            font-size: 12px;
+           padding-top: 15px;
+        }
+
+
+
+        .attachBtn{
+            width: 20%;
+
+            }
+
+
+            .submit-box{
+
+                .submitBtn{
+                    width: 60%;
+                }
+            }
+    }
+}

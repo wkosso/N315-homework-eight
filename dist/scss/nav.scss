@@ -1,0 +1,168 @@
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+  
+   
+}
+
+header{
+    
+    color: black;
+    padding: 0.9rem 0;
+    position: fixed;
+  width: 100%;
+z-index: 10;
+}
+
+.nav-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   width: 95%;
+height: 70px;
+    margin: 0 auto;
+   
+   
+}
+
+
+
+.nav {
+    display: flex;
+
+   
+}
+
+.nav--ul__one{
+    margin:  0 auto;
+}
+
+.nav-container,.nav--ul__one{
+    display: flex;
+    gap: 1.6rem;
+    font-size: 25px;
+    font-family: CaveatRegular;
+   
+}
+
+ .navlogin{
+width:158px;
+height: 52px;
+background-color: #FFD972;
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: -5px 10px 6px 0.5px  rgba(136,136,136,0.2);
+   
+}
+
+.hr-line{
+    border-bottom: 2px solid black; 
+  
+  
+ 
+}
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    
+}
+
+
+
+
+@media (max-width: 700px) {
+   
+    .nav-container .logo svg {
+        font-size: 1.2rem;
+        z-index: 2;
+        width: 100px;
+        height: 60px;
+    }
+
+    
+
+   
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        z-index: 2; 
+    }
+
+   
+    .nav {
+        position: absolute;
+       top: 0;
+        right: -100%;
+        bottom: 0;
+        width: 100%;
+        flex-direction: row;
+       
+        padding-top: 2rem;
+        padding-left: 3rem;
+       // align-items: center;
+        //text-align: center;
+      //  background-color: burlywood;
+       // color: #fff;
+        transition: right 0.3s ease-in-out; 
+ 
+    }
+
+  
+    .nav.active {
+        right: 0;
+    }
+
+   
+    .nav--ul__one {
+       // flex-direction: column;
+        gap: 1rem;
+        font-size: 15px;
+       // background-color: red;
+       width: 75%;
+
+   padding-left: 50px;
+    }
+    .navlogin{
+        width: 100px;
+        height: 20px;
+        border-radius: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+  
+    .nav-container .logo svg {
+        font-size: 1.2rem;
+        z-index: 2;
+        width: 84px;
+        height: 27px;
+    }
+
+
+    .nav--ul__one {
+        // flex-direction: column;
+         gap: 0.8rem;
+         font-size: 10px;
+        
+        
+      
+         width: 80%;
+      //   background-color: aqua;
+     }
+
+
+     .navlogin{
+        width: 80px;
+        height: 20px;
+        border-radius: 20px;
+    }
+}

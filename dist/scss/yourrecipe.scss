@@ -1,0 +1,436 @@
+.yourrecipe-wrapper{
+    width: 100%;
+  min-height: 800px;
+ 
+    background-color: #A7E8BD;
+
+    padding-top: 18%;
+
+    background-image: linear-gradient(rgba(167, 232, 189, 0.7), rgba(167, 232, 189, 0.7)),  url(../assets/images/recipe-hero.jpg);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+//padding-left: 107px;
+
+position: relative;
+
+.yourrec-Padding{
+    padding-left: 107px; 
+}
+
+
+.yourrecipe-SigninText{
+
+    font-size: 25px;
+font-family: CaveatBold;
+margin-bottom: 3%;
+}
+
+.yourrec-InfoContainer{
+width: 70%;
+//background-color: aqua;
+
+
+display: flex;
+
+
+
+
+.yourrec-ImageHolder{
+width: 300px;
+
+    .yourrecImg{
+ background-image: url(../assets/images/recipe-pizza.jpg);
+
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+ width: 100%;
+height: 263px;
+border-radius: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+
+.viewBtn{
+    width: 40%;
+height: 42px;
+background-color: #FFD972;
+border-radius: 26px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: -5px 10px 6px 0.5px  rgba(136,136,136,0.4);
+
+font-family: CaveatRegular;
+font-size: 20px;
+cursor: pointer;
+
+
+}
+    }
+
+
+}
+
+
+
+//Dashboard
+
+.yourrec-ImgDashboard{
+    width: 224px;
+    background-color: white;
+    height: 263px;
+
+border-radius: 24px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+
+
+    .dash-title{
+        width: 100%;
+        font-size: 15px;
+        font-family: LatoBlack;
+        margin-top: 10%;
+        text-align: center;
+       
+    }
+
+    .dash-hr{
+        border-bottom: 3px solid black; 
+width: 53%;
+margin-left: 25%;
+display: block
+    }
+
+
+    .dash-text{
+        font-size: 9px;
+        font-family: LatoRegular;
+        width: 56%;
+        height: 58px;
+       
+     
+    }
+
+    .dash-timerContainer{
+//background-color: red;
+width: 46%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+        .timer-logo{
+
+            background-image: url(../assets/images/time.svg);
+            width: 24%;
+            height: 24px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .dash-timer{
+            font-size: 10px;
+            font-family: LatoRegular;
+        }
+    }
+
+
+
+.dash-servingContainer{
+
+   // background-color: red;
+    width: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+margin-bottom: 5%;
+    
+    .serve-logo{
+
+        background-image: url(../assets/images/servings.svg);
+        width:24%;
+        height: 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .dash-serve{
+        font-size: 10px;
+        font-family: LatoRegular;
+    }
+}
+
+
+
+}
+    
+}
+
+.infoplus{
+   // background-color: orange;
+   // width: 82%;
+   width: 50%;
+    min-height: 50px;
+
+    display: flex;
+    align-items: center;
+   justify-content: center;
+
+    padding-bottom: 5%;
+}
+
+.editDelete-box{
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding-top: 15px;
+
+width: 27%;
+margin-bottom: 5%;
+
+    .editBtn{
+
+        width: 40%;
+        height: 42px;
+        background-color: #FFD972;
+        border-radius: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -5px 10px 6px 0.5px  rgba(136,136,136,0.4);
+
+
+        font-family: CaveatRegular;
+font-size: 20px;
+cursor: pointer;
+    }
+
+
+
+    .deleteBtn{
+
+        width: 40%;
+        height: 42px;
+        background-color: #FFD972;
+        border-radius: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -5px 10px 6px 0.5px  rgba(136,136,136,0.4);
+
+
+        font-family: CaveatRegular;
+font-size: 20px;
+cursor: pointer;
+    }
+
+}
+
+}
+
+
+
+
+@media (max-width: 700px) {
+
+
+    .yourrecipe-wrapper{
+
+        
+.infoplus{
+  //  background-color: orange;
+    width: 82%;
+ //  width: 50%;
+    min-height: 50px;
+
+}
+
+        .yourrec-Padding{
+
+
+            .yourrec-InfoContainer{
+               width: 95%;
+    .yourrec-ImageHolder{
+
+        // .yourrecImg{
+
+        // }
+        .viewBtn{
+            width: 45%;
+           
+        }
+    }
+
+}
+
+
+
+
+.yourrec-ImgDashboard{
+
+    .dash-hr{
+        width: 50%;
+    
+    }
+}
+
+
+
+
+.editDelete-box{
+ //   background-color: indigo;
+    width: 55%;
+   
+    
+}
+
+.editBtn{
+    width: 45%;
+    font-size: 22px;
+ height: 46px;
+}
+
+.deleteBtn{
+    width: 45%;
+ height: 46px;
+    font-size: 22px;
+}
+}
+}
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+    .yourrecipe-wrapper{
+padding-top: 30%;
+//height: 1000px;
+
+        .yourrec-Padding{
+padding-left: 30px;
+            .yourrecipe-SigninText{
+                font-size: 19px;
+             //   background-color: orange;
+                text-align: center;
+            }
+
+            .yourrec-InfoContainer{
+
+               // background-color: violet;
+                flex-wrap: wrap;
+                flex-direction: column;
+               width: 95%;
+               align-items: center;
+               
+    .yourrec-ImageHolder{
+
+
+width: 70%;
+
+
+
+        .yourrecImg{
+            height: 149px;
+        }
+        .viewBtn{
+            width: 48%;
+           
+        }
+    }
+
+}
+
+
+
+.yourrec-ImgDashboard{
+
+    width: 70%;
+    height: 169px;
+   
+    .dash-hr{
+        width: 40%;
+    
+    }
+    .dash-title{
+        font-size: 10px;
+      margin-top: 3%;
+     // background-color: red;
+    }
+
+
+
+    .dash-timerContainer{
+        width: 35%;
+
+      //  background-color: greenyellow;
+    .timer-logo{
+        width: 20%;
+        height: 23px;
+      
+    }
+
+
+   
+}
+
+
+
+
+ .dash-servingContainer{
+
+width: 35%;
+        .serve-logo{
+            width: 20%;
+            height: 23px;
+            
+        }
+    }
+}
+
+
+
+
+.editDelete-box{
+   // background-color: indigo;
+    width: 95%;
+   
+    
+}
+
+.editBtn{
+    width: 40%;
+    font-size: 22px;
+ height: 37px;
+}
+
+.deleteBtn{
+    width: 40%;
+ height: 37px;
+    font-size: 22px;
+}
+
+
+
+}
+
+
+}
+
+}
