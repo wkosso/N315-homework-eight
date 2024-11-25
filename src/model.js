@@ -113,12 +113,14 @@ $(".all-recipes").append(recipeHTML);
                   <div class="viewrecipe-ingDes">${recipe.ingredients}</div>
                   <div class="viewrecipe-insTitle">Instructions:</div>
                   <div class="viewrecipe-insDes">${recipe.instructions}</div>
-                  <div class="editBtn2   editjq"  id="${recipe[recipeId]}"> <a href="#edit">Edit Recipe</a></div>
+                  <div class="editBtn2   editjq"  id="${recipeId}"> <a href="#edit">Edit Recipe</a></div>
               </div>
               `;
-
+           
+           
+            
               $("#app .recipesoloView").html(recipeHTML);
-             editRecipeListerners();
+              editRecipeListerners();
           } else {
               console.error("Recipe not found for ID:", recipeId);
           }
@@ -157,6 +159,8 @@ $(".all-recipes").append(recipeHTML);
       
       
         $("#app .instructs input").val(recipe.instructions).prop("readonly", false); 
+
+      
       }
       
       else {
@@ -291,7 +295,7 @@ if (
 
 
 $(".form input").val("");
-//  resetForm();
+  resetForm();
 console.log(userRecipes);
 });
 
@@ -391,7 +395,7 @@ export function editRecipeListerners(){
  
 currentRecipeId = recipeId;
 
-console.log("Edit Button Clicked:", recipe);
+console.log("Edit Button Clicked:", currentRecipeId);
   
 
 
@@ -400,7 +404,7 @@ console.log("Edit Button Clicked:", recipe);
 
   });
 
-  
+
   $("#submitBtn").on("click", function(e) {
     var updatedRecipeName = $("#app #recipeName").val(); 
     var updatedImageURL = $("#app #imageURL").val();  
@@ -408,7 +412,7 @@ console.log("Edit Button Clicked:", recipe);
     var updatedTotalTime = $("#app #recipeTotalTime").val(); 
     var updatedServingSize = $("#app #recipeServingSize").val(); 
     var updatedIngredients = $("#app .ingreds input").val();
-    var updatedInstruction = $("#app .instructs input").val();
+    var updatedInstruction = $("#app .instructs input").val()
 
 
 
@@ -437,8 +441,11 @@ if(!isEditMode){
     Swal.fire({
       icon: "success",
       title: "Recipe updated successfully!",
+
   });
 }
+
+
 });
 
 }
