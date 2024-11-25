@@ -297,7 +297,7 @@ let foodString=`
 
 <div class="yourrec-InfoContainer infoplus" >
     <div class="yourrec-ImageHolder">
-        <div class="yourrecImg" style="background-image: url(${food.recipeImageURL});">
+        <div class="yourrecImg" style="background-image: url(../${food.recipeImageURL});">
             
         </div>
     </div>
